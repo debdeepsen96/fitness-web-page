@@ -11,7 +11,9 @@
      margin: 0;
      padding: 0;
 }
-
+body{
+    background: rgba(0, 0, 0, 1);
+}
 .font-miama{
     font-family: 'Miama', sans-serif;
     font-optical-sizing: auto;
@@ -233,6 +235,81 @@ nav{
  .fa-solid{
     color:white;
 }
+.habit-sec{
+    background: rgba(0, 0, 0, 1);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+}
+.section-title{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    max-width: 46.5%;
+}
+.section-title p{
+    text-align: center;
+}
+.main-title{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-style: Black;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: 0%;
+}
+.habit-cards-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+}
+.habit-card{
+    width: 231px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+.img-holder{
+    height: 180px;
+    width: 180px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    
+  overflow: hidden;
+
+}
+.habit-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.habit-desc h5{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-style: Semi Bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.habit-desc p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px ){
     .nav-menu{
         display: none;
