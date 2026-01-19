@@ -123,6 +123,7 @@ nav{
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    
 }
 
 .btn-secondary{
@@ -241,12 +242,14 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 58px;
 }
 .section-title{
     display: flex;
     flex-direction: column;
     gap: 14px;
+    align-items: center;
     text-align: center;
     max-width: 46.5%;
 }
@@ -267,6 +270,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     gap:40px;
+}
+.habit-card p{
+    width:100%;
 }
 .habit-card{
     width: 231px;
@@ -308,6 +314,7 @@ nav{
     line-height: 18px;
     letter-spacing: 0.3px;
     text-align: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 576px ){
@@ -347,9 +354,7 @@ nav{
         font-weight: 400;
         font-size: 6rem;
     }
-    .desc-styles{
-    max-width: 70%;
-    }
+    
     .banner-image{
         width: 90%;
         margin: auto;
@@ -369,7 +374,7 @@ nav{
     line-height: 30px;
     letter-spacing: 0.75px;
     text-align: left;
-}
+    }
     .float-box1 p{
     font-size: 9px;
     font-weight: 400;
@@ -378,7 +383,7 @@ nav{
     text-align: left;
     }
 
-.float-box2{
+    .float-box2{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -389,15 +394,15 @@ nav{
     padding: 14px 17px;
     max-width: 150px;
     max-height: 72px;
-}
-.float-box2 h4{
+    }
+    .float-box2 h4{
     font-size: 20px;
     font-weight: 900;
     line-height: 18px;
     letter-spacing: 0.3px;
     text-align: left;
-}
- .float-box2 p{
+    }
+    .float-box2 p{
     font-size: 12px;
     font-weight: 400;
     width: 100%;
@@ -417,6 +422,29 @@ nav{
     border-bottom: 7.5px solid transparent;
     border-left: 12px solid white;
     margin-left: 2.33px;  
+    }
+    .habit-sec{
+    margin-top: 40px;
+    width: 90%;
+    margin: auto;
+    
+    }
+    .section-title{
+    max-width: 95%;
+    }
+    .main-title{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 39px;
+    }
+    .habit-cards-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:40px;
+    }
+    .banner-img{
+        width: 353px;
     }
 
 }
