@@ -288,7 +288,7 @@ nav{
     border: 4px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     
-  overflow: hidden;
+    overflow: hidden;
 
 }
 .habit-desc{
@@ -315,6 +315,49 @@ nav{
     letter-spacing: 0.3px;
     text-align: center;
     width: 100%;
+}
+.run-sec{
+    background: rgba(0, 0, 0, 1);
+}
+.run-sec{
+    display: flex;
+    justify-content: center;
+}
+.run-extra{
+    width: 70%;
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgba(34, 34, 34, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 34px;
+    padding: 30px;
+}
+.run-extra-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.run-extra-lft{
+    width: 443px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    justify-content: center;
+}
+.habit-image-div{
+        height: 316px;
+        width: 366px;
+       overflow: hidden;
+       border-radius: 18px;
+}
+.habit-image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+    transform: scale(2.5) translateX(-17%) translateY(10%);
+
 }
 
 @media screen and (max-width: 576px ){
