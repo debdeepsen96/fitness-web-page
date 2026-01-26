@@ -336,6 +336,7 @@ nav{
     gap: 34px;
     padding: 30px;
 }
+
 .run-extra-desc{
     display: flex;
     flex-direction: column;
@@ -363,7 +364,8 @@ nav{
 }
 .training-sec{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 88px;
     justify-content: center;
     align-items: center;
 }
@@ -469,7 +471,90 @@ nav{
     background:rgba(0, 71, 255, 0.3);
 
 }
-  
+.bmi-heading{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 88px;
+}
+.bmi-cal-sec{
+    display: flex;
+    justify-content: center;
+    background: rgba(34, 34, 34, 1);
+}
+.bmi-cal-div{
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-cal-right{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap:34px;
+}
+.small-heading{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-style: Black;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+table, th, td {
+    border-style: ridge;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+th, td{ 
+    width: 155px; 
+    height: 40px;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+     font-family: Inter;
+    font-style: Medium;
+}
+th, td{ 
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+}
+.bmi-cal-left .small-heading{
+    margin-bottom: 50px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.form-grid input,
+.form-grid select {
+  background: #2b2b2b;
+  border-style: none;
+  color: #aaa;
+  padding: 14px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-grid .full {
+  grid-column: span 2;
+}
 @media screen and (max-width: 576px ){
     .nav-menu{
         display: none;
@@ -580,7 +665,6 @@ nav{
     margin-top: 40px;
     width: 90%;
     margin: auto;
-    
     }
     .section-title{
     max-width: 95%;
@@ -603,10 +687,11 @@ nav{
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    .run-extra{
-        width: 90%;
+     .run-extra{
+        width: 80%;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .run-extra-lft{
@@ -658,4 +743,41 @@ nav{
         bottom: 80px;
         left: 20px;
     }
+    .bmi-heading{
+        width: 90%;
+        margin-bottom: 32px;
+    }
+    .training-sec{
+        gap: 32px;
+    }
+    .bmi-cal-div{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 40px;
+    }
+  
+.bmi-cal-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:34px;
+}
+.small-heading{
+
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+}
+.bmi-cal-left .small-heading{
+    margin-bottom: 50px;
+}
+
+.form-grid {
+  max-width: 100%;
+}
+
+
+
 }
